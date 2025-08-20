@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #0a3665;
+
+}
+
+header {
+    padding: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.container-cadastro {
+    background-color: white;
+    border: 1px solid black;
+    width: clamp(350px,40vw,80vw);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    gap: 10px;
+}
+
+p {
+    margin-right: 200px;
+}
+
+hr {
+    width: 250px;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 300px;
+    padding-left: 30px;
+}
+
+.usuario-input {
+    background-image: url(img/user-line.png);
+    background-repeat: no-repeat;
+    height: 20px;
+}
+
+.email-input {
+    background-image: url(img/mail-line.png);
+    background-repeat: no-repeat;
+    height: 22px;
+}
+
+.senha-input {
+    background-image: url(img/lock-line.png);
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(#0a3665, #123f8c);
+}
+
+.ousecadastre {
+    font-size: 12px;
+    opacity: 70%;
+}
+
+.ri-google-line {
+    font-size: 30px;
+    cursor: pointer;
+}
