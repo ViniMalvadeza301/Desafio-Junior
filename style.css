@@ -4,47 +4,48 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+ 
 img {
-    width: clamp(200px,20vw,300px);
+    width: clamp(200px,10vw,300px);
     height: auto;
 }
-
+ 
 .linhaCor {
     padding: clamp(1vw,2vh,4vh);
-    background-color: #F0E0D2;
+    background-color: #e61a4d;
     display: flex;
     justify-content: center;
+    color: white;
 }
-
+ 
 .primeiroNav {
     display: flex;
     flex-direction: row;
-    background-color: #1C5133;
+    background-color: #0a3665;
     padding: clamp(1vh,2vh,4vh);
     align-items: center;
     justify-content: flex-end;
     gap: clamp(1rem,8vw, 8rem);
 }
-
+ 
 li {
     list-style: none;
     font-size: clamp(12px,1vw,24px);
     font-weight: 600;
 }
-
+ 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
+ 
 .a-header {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 700;
     font-family: sans-serif;
 }
-
+ 
 .segundoNav {
     width: 100vw;
     padding: clamp(2vh, 3vh, 6vh);
@@ -54,7 +55,7 @@ a {
     gap: clamp(1rem,2vw,5rem);
    
 }
-
+ 
 .juntarCarrinho {
     display: flex;
     flex-direction: row;
@@ -62,29 +63,29 @@ a {
     margin-right: 10px;
     font-size: clamp(0.8rem,2vh,2rem);
 }
-
+ 
 .ri-shopping-cart-line {
     font-size: clamp(0.9rem,3vh,2rem);
     color: black;
 }
-
+ 
 .corSegunda {
     background-color: white;
 }
-
+ 
 .a-cart {
     color: black;
 }
-
+ 
 .linhaCorDois {
-    background-color: #5B5B5B;
+    background-color: #3A86FF;
     height: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
 }
-
+ 
 .tituloEscolha {
     display: flex;
     flex-direction: column;
@@ -92,14 +93,14 @@ a {
     gap: 2vh;
     text-align: center;
     margin-top: 2vh;
-    
+   
 }
-
+ 
 .titulo {
-    color: #1C5133;
+    color: #e61a4d;
     font-weight: 900;
 }
-
+ 
 .containerProdutos {
     display: flex;
     justify-content: center;
@@ -107,7 +108,7 @@ a {
     gap: clamp(0.5rem,3rem,8rem);
     margin-top: 2rem;
 }
-
+ 
 .produto {
     text-align: center;
     border-radius: 20px;
@@ -118,12 +119,13 @@ a {
     padding: 1rem;
     max-width: clamp(300px,20vw,500px);
     box-shadow: 0px 5px 10px;
+    transition: all ease-in 0.5s;
 }
-
+ 
 hr {
     width: clamp(300px,20vw,500px);
 }
-
+ 
 button {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -133,12 +135,29 @@ button {
     border-radius: 50px;
     color: #1C5133;
     font-weight: 800;
+    transition: all ease-in 0.2s;
 }
-
+ 
 footer {
     display: flex;
-    font-size: clamp(60px,5vw,100px);
+    font-size: clamp(60px,3vw,100px);
     justify-content: space-around;
-    background-color: #1C5133;
-    margin-top: 4rem;
+    background-color: #0a3665;
+    margin-top: 6.35rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+ 
+.produto:hover {
+    transform: scale(1.05);
+}
+ 
+button:hover {
+    transform: scale(1.05);
+    background-color: red;
+    opacity: 70%;
+    color: white;
+    cursor: pointer;
 }
