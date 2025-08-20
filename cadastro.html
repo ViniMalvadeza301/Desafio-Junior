@@ -8,6 +8,8 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 </head>
 <body>
     <header>
@@ -33,8 +35,35 @@
                 Cadastrar-se
             </button>
             <div class="ousecadastre">ou se cadastre usando</div>
-            <i class="ri-google-line"></i>
+            <div id="google-signin-button"></div>
         </div>
     </main>
+
+    <script>
+        window.onload = function () {
+    google.accounts.id.initialize({
+        client_id: "176219728988-qdul1v41go657qur78382obq50eqfes5.apps.googleusercontent.com", // substitua pelo seu Client ID
+        callback: handleCredentialResponse
+    });
+
+    google.accounts.id.renderButton(
+        document.getElementById("google-signin-button"),
+        { theme: "outline", size: "large" }
+    );
+
+    google.accounts.id.prompt(); // sugere login automaticamente
+}
+
+function handleCredentialResponse(response) {
+    const base64Url = response.credential.split('.')[1];
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const decodedPayload = JSON.parse(atob(base64));
+
+    // Exemplo: mostrar os dados do usuário
+    console.log(decodedPayload);
+    alert(`Olá ${decodedPayload.name}! Email: ${decodedPayload.email}`);
+}
+
+    </script>
 </body>
 </html>
