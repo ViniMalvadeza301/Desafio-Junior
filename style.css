@@ -35,15 +35,27 @@ li {
 }
  
 a {
+    display: block;
     text-decoration: none;
     color: white;
+    transition: all ease-in 0.5s;
+}
+
+a:hover {
+    color: black;
 }
  
 .a-header {
+    display: block;
     text-decoration: none;
     color: white;
     font-weight: 700;
     font-family: sans-serif;
+    transition: all ease 1s;
+}
+
+.a-header:hover {
+    transform: scale(1.2);
 }
  
 .segundoNav {
@@ -74,7 +86,13 @@ a {
 }
  
 .a-cart {
+    display: block;
     color: black;
+    transition: all ease 1s;
+}
+
+.a-cart:hover {
+    transform: scale(1.2);
 }
  
 .linhaCorDois {
@@ -119,7 +137,7 @@ a {
     padding: 1rem;
     max-width: clamp(300px,20vw,500px);
     box-shadow: 0px 5px 10px;
-    transition: all ease-in 0.5s;
+    transition: all ease-out 0.5s;
 }
  
 hr {
@@ -135,7 +153,7 @@ button {
     border-radius: 50px;
     color: #1C5133;
     font-weight: 800;
-    transition: all ease-in 0.2s;
+    transition: all ease-out 0.2s;
 }
  
 footer {
