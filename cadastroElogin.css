@@ -46,7 +46,7 @@ main{
     background-color: white;
     border: 1px solid black;
     width: clamp(350px,40vw,80vw);
-    height: 70vh;
+    height: clamp(500px,50vh,800px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +129,7 @@ button:hover {
         opacity: 0.5;
     }
     100% {
-        transform: translateY(-15vh);
+        transform: translateY(0vh);
         opacity: 1;
     }
 }
