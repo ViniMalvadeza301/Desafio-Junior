@@ -46,14 +46,14 @@ main{
     background-color: white;
     border: 1px solid black;
     width: clamp(350px,40vw,80vw);
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
     gap: 10px;
-    animation: descerContainer 3s ease-out forwards;
+    animation: descerContainer 2s ease-out forwards;
 }
 
 p {
