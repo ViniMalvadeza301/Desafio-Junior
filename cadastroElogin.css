@@ -53,7 +53,7 @@ main{
     align-items: center;
     border-radius: 16px;
     gap: 10px;
-    animation: descerContainer ease-out forwards;
+    animation: descerContainer 2s ease-out forwards;
 }
 
 p {
