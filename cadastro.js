@@ -1,4 +1,5 @@
 let banco = [];
+console.log(banco);
 
 function adicionarDados(nome, email, senha) {
 

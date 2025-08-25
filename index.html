@@ -8,6 +8,7 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <script src="index.js"></script>
 </head>
 <body>
     <section class="linhaCor">
@@ -32,7 +33,7 @@
                 <li><a href="" class="a-cart">ACESSORIOS</a></li>
             </ul>
             <div>
-                <a href=""><i class="ri-shopping-cart-line"></i></a>
+                <a href="carrinho.html" onclick="mandarInfo()"><i class="ri-shopping-cart-line"></i></a>
             </div>
         </nav>
     </section>
@@ -50,21 +51,21 @@
                 <hr>
                 <h3>Bola de basquete Spalding - Streetball</h3>
                 <p>R$ 98,91</p>
-                <button>ADD TO CART</button>
+                <button onclick="adicionarProduto(this)" data-name="Bola de basquete Spalding - Streetball" data-price="98.91">ADD TO CART</button>
             </div>
             <div class="produto">
                 <img src="img/Wilson.webp" alt="wilson">
                 <hr>
                 <h3>Bola de basquete Wilson - Nba Drv Pro</h3>
                 <p>R$ 217,90</p>
-                <button>ADD TO CART</button>
+                <button onclick="adicionarProduto(this)" data-name="Bola de basquete Wilson - Nba Drv Pro" data-price="217.90">ADD TO CART</button>
             </div>
             <div class="produto">
                 <img src="img/Molten.jpeg" alt="molten">
                 <hr>
                 <h3>Molten GG7X bola de Basquete</h3>
                 <p>R$ 88,07</p>
-                <button>ADD TO CART</button>
+                <button onclick="adicionarProduto(this)" data-name="Molten GG7X bola de Basquete" data-price="88.07">ADD TO CART</button>
             </div>
         </div>
     </main>
