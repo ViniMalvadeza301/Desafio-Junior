@@ -38,15 +38,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-top: 10vh;
 }
 
 .container-cadastro {
     background-color: white;
     border: 1px solid black;
     width: clamp(350px,40vw,80vw);
-    height: clamp(500px,50vh,800px);
+    height: clamp(450px,50vh,800px);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -8,14 +8,17 @@ function mandarInfo() {
 function adicionarProduto(botaoThis) {
     let productName = botaoThis.getAttribute("data-name");
     let productPrice = parseFloat(botaoThis.getAttribute("data-price"));
+    let productImage = botaoThis.getAttribute("data-img");
     
     let verificarElemento = produtos.find(i => i.name === productName); // find é tipo um loop que passa por todo array
 
     if (verificarElemento) {
         alert("Produto já está no carrinho!");
     } else {
-        produtos.push({name: productName, price: productPrice, quantity: 1});
+        produtos.push({name: productName, price: productPrice, image: productImage, quantity: 1});
         alert("Produto adicionado ao carrinho!");
     }
     console.log(produtos);
 }
+
+//DONE//
